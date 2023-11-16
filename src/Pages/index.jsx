@@ -1,0 +1,5 @@
+export {default as DashBoard} from './DashBoard.jsx'
+export {default as InfoAnalysisPage} from './InfoAnalysisPage.jsx'
+export {default as DomainAnalysisPage} from './DomainAnalysisPage.jsx'
+export {default as WebContentAnalysisPage} from './WebContentAnalysisPage.jsx'
+export {default as APIPage} from './APIPage.jsx'

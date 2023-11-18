@@ -16,6 +16,7 @@ import {
   DomainAnalysisPage,
   WebContentAnalysisPage,
 } from "./Pages";
+import Home from "./Pages/Home";
 
 const theme = {
   palette: {
@@ -38,7 +39,7 @@ const theme = {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route path="/home" element={<DashBoard />} />
+      <Route path="home" element={<Home />} />
       <Route index element={<DashBoard />} />
       <Route path="info" element={<InfoAnalysisPage />} />
       <Route path="domain" element={<DomainAnalysisPage />} />

@@ -3,7 +3,6 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-
     // Path to the Tremor module
     "./node_modules/@tremor/**/*.{js,ts,jsx,tsx}",
   ],
@@ -12,7 +11,6 @@ export default {
   },
   plugins: [],
 };
-
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {

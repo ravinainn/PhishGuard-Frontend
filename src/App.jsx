@@ -38,13 +38,15 @@ const theme = {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route path="home" element={<Home />} />
-      <Route index element={<DashBoard />} />
-      <Route path="info" element={<InfoAnalysisPage />} />
-      <Route path="domain" element={<DomainAnalysisPage />} />
-      <Route path="web-content" element={<WebContentAnalysisPage />} />
-    </Route>
+    <>
+      <Route path="/" element={<Home />} />
+      <Route path="/dashboard" element={<RootLayout />}>
+        <Route index element={<DashBoard />} />
+        <Route path="info" element={<InfoAnalysisPage />} />
+        <Route path="domain" element={<DomainAnalysisPage />} />
+        <Route path="web-content" element={<WebContentAnalysisPage />} />
+      </Route>
+    </>
   )
 );
 
